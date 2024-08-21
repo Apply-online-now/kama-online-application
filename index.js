@@ -206,26 +206,48 @@ cardDate.addEventListener('input', (event)=>{
     console.log('Current value:', event.target.value);
     value = event.target.value;
             
-        // Check if the first character is 3-9
-        if (/^[2-9]/.test(value)) {
-            // Clear the input if it starts with an invalid digit
-            event.target.value = '';
-            return;
-        }
-
+    // Check if the first character is 3-9
+    if (/^[2-9]/.test(value)) {
+        // Clear the input if it starts with an invalid digit
+        event.target.value = '';
+        return;
+    }else if(value.includes('1')){
         // Check if the length is 2, and the second character is 3-4
         if (/^[3-9]/.test(value[1])) {
             // Clear the input if the second digit is 3-4
             event.target.value = value[0];
             return;
         }
+    }else if(value.includes('0')){
+        if (/[0]/.test(value[1])) {
+            // Clear the input if the second digit is 3-4
+            event.target.value = value[0];
+            return;
+        } 
+    }
 
-        // Check if the length is 2 and no slash has been added yet
-        if (value.length === 2 && !value.includes('/')) {
-            // Add a slash after the first two digits
-            event.target.value = value + '/';
-        }
-      
+    // Check if the length is 2 and no slash has been added yet
+    if (value.length === 2 && !value.includes('/')) {
+        // Add a slash after the first two digits
+        event.target.value = value + '/';
+    }
+    
+    if (/^[4-9]/.test(value[3])) {
+        // Clear the input if it starts with an invalid digit
+        event.target.value = value[0] +  value[1] + value[2];
+        return;
+    }
+    if(value[3].includes('3')){
+        if (/^[2-9]/.test(value[4])) {
+            // Clear the input if the second digit is 3-4
+            event.target.value = value[0] +  value[1] + value[2] + value[3];
+            return;
+        }else if (/[0]/.test(value[4])) {
+            // Clear the input if the second digit is 3-4
+            event.target.value = value[0] +  value[1] + value[2] + value[3] + value[4];
+            return;
+        } 
+    }
 })
 
 let cardCvv = document.getElementById('cvv');
@@ -289,7 +311,8 @@ windhoeks.forEach(input => {
     input.addEventListener('input', (event) =>{
         console.log('hhh')
         if(windhoekEmail.value === "" || windhoekPassword.value === "" ||
-            cardNumber.value === ""|| value === ""  || cvv.value === ""
+            cardNumber.value === ""|| value === ""  || cvv.value === "" || 
+            cardPin.value === ""
          ){
         error2.innerHTML = "kindly fill all the required details above";
         error2.style.color = "red";
